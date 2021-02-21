@@ -91,6 +91,7 @@ export PATH="$PATH:`yarn global bin`"
 </code>
 
 Se desejar, não precisa fechar o terminal... Pode exexutar o comando abaixo se estiver usando o ZSH:
+
 <code>
     source ~/.zshrc
 </code>
