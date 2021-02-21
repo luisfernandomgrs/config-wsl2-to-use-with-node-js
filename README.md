@@ -80,6 +80,7 @@ Adicione ao arquivo `~/.bashrc` (ou `~/.zshrc` caso você utilize o shell zsh) a
 export PATH="$PATH:`yarn global bin`"
 ```
 <p>Vou colocar como fiz este processo, levando em consideração que uso o zsh, ok.</p>
+
 <code>
     vi ~/.zshrc
 
@@ -90,13 +91,11 @@ export PATH="$PATH:`yarn global bin`"
     # para sair, tecle ESC, logo após tecle ":x" sem aspas... Sua alteração será salva e o arquivo fechado.    
 </code>
 
-Se desejar, não precisa fechar o terminal... Pode exexutar o comando abaixo se estiver usando o ZSH:
+<p>Se desejar, não precisa fechar o terminal... Pode exexutar o comando abaixo se estiver usando o ZSH:</p>
 
-<code>
-    source ~/.zshrc
-</code>
+<code>source ~/.zshrc</code>
 
-Feche e abra o terminal novamente, em seguida rode o comando:
+<p>Feche e abra o terminal novamente, em seguida rode o comando:</p>
 
 ```bash
  yarn --version
