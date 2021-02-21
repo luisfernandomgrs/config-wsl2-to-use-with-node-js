@@ -44,4 +44,14 @@ sudo apt install curl
     sudo apt-get install -y nodejs
     ```
 
-    Feche o terminal e abra novamente para as alterações fazerem efeito.
+Feche o terminal e abra novamente para as alterações fazerem efeito.
+
+- Por fim, execute os seguintes comandos no terminal:
+
+```bash
+node -v
+npm -v
+```
+Estes comandos retornam as versões respectivas do node e npm instalados.
+Caso retorne as versões do Node e npm, sua instalação foi um sucesso.
+
