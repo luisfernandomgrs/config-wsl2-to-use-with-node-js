@@ -52,6 +52,6 @@ Feche o terminal e abra novamente para as alterações fazerem efeito.
 node -v
 npm -v
 ```
-Estes comandos retornam as versões respectivas do node e npm instalados.
-Caso retorne as versões do Node e npm, sua instalação foi um sucesso.
+<p>Estes comandos retornam as versões respectivas do node e npm instalados.</br>
+Caso retorne as versões do Node e npm, sua instalação foi um sucesso.</p>
 
