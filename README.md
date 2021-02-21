@@ -52,6 +52,65 @@ Feche o terminal e abra novamente para as alterações fazerem efeito.
 node -v
 npm -v
 ```
-<p>Estes comandos retornam as versões respectivas do node e npm instalados.</br>
-Caso retorne as versões do Node e npm, sua instalação foi um sucesso.</p>
 
+Caso retorne as versões do Node e npm, sua instalação foi um sucesso.
+
+
+
+# Yarn 1
+
+## Linux (Ubuntu/Debian)
+
+Para instalar o Yarn 1 no Linux vamos começar configurando o repositório do **Yarn** executando:
+
+```bash
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+```
+
+Instale utilizando o seguinte comando:
+
+```bash
+ sudo apt update && sudo apt install --no-install-recommends yarn
+```
+
+Adicione ao arquivo `~/.bashrc` (ou `~/.zshrc` caso você utilize o shell zsh) a seguinte linha: 
+
+```bash
+export PATH="$PATH:`yarn global bin`"
+```
+<p>Vou colocar como fiz este processo, levando em consideração que uso o zsh, ok.</p>
+<code>
+    vi ~/.zshrc
+
+    # adicionei a instrução export acima, logo abaixo da instrução export do ZSH... ficando assim:
+    export ZSH="/home/luisfernando/.oh-my-zsh"
+    export PATH="$PATH:`yarn global bin`"
+    
+    # para sair, tecle ESC, logo após tecle ":x" sem aspas... Sua alteração será salva e o arquivo fechado.    
+</code>
+
+Se desejar, não precisa fechar o terminal... Pode exexutar o comando abaixo se estiver usando o ZSH:
+<code>
+    source ~/.zshrc
+</code>
+
+Feche e abra o terminal novamente, em seguida rode o comando:
+
+```bash
+ yarn --version
+```
+
+Caso retorne a versão do Yarn (acima de 1.0, abaixo de 2.0), a instalação ocorreu com sucesso.
+
+# Personalização
+
+Ainda tomando como base o processo de configuração da Rocketseat, segue algumas dicas de configuração do Visual Studio Code.
+
+Pra essa sessão, vou optar por deixar o link do material publicado pela Rocketseat, já que meu objetivo era apenas garantir deixar um material de apoio para configuração do node.js usando WSL e VS Code caso o material original seja removido.
+
+Então segue o link abaixo para a personalização do seu ambiente de Desenvolvimento.
+
+<code>https://www.notion.so/1c09af201b4b49c5bf1678842a96d9ab</code>
+
+Um abraço, :)
